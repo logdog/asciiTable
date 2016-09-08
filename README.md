@@ -6,6 +6,7 @@ Execute the asciiTable.py with this simple command:
 ```
 python3 asciiTable.py Dog Cat Banana Monkey Madness
 ```
+This table has headers of Dog, Cat, Banana, Monkey, and Madness.
 ```
 -----------------------------------------
 | Dog | Cat | Banana | Monkey | Madness |
@@ -23,7 +24,6 @@ python3 asciiTable.py Dog Cat Banana Monkey Madness
 |     |     |        |        |         |
 -----------------------------------------
 ```
-This table has headers of Dog, Cat, Banana, Monkey, and Madness.
 
 ### Optional Arguments
 - rows: Specifies how many rows there are in the table (default=4).
