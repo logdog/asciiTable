@@ -1,4 +1,4 @@
-#python 3
+#python 3.x
 import argparse
 import sys
 
@@ -26,7 +26,6 @@ def generateRows(lst):
 	print('|')
 
 if __name__ == '__main__':
-
 	parser = argparse.ArgumentParser()
 	parser.add_argument('-r', '--rows', type=int, default=4, help='Rows in table')
 	parser.add_argument('-c', '--height', type=int, default=2, help='Height of cells in table')
