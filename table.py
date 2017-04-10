@@ -194,7 +194,6 @@ class Table():
                         d = self.columns[col_index].get_cell(cell_index).add_depth()
 
                 current_total_width = self.get_current_width()
-                print(current_total_width)
                 if tries >= MAX_TRIES:
                     print("ERROR: Could not make table to desired width. Attempts tried: %d" % (tries))
                     break
