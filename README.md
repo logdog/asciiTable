@@ -44,7 +44,7 @@ print(text)
 ```
 
 There are also some quick methods for setting warning, errors, and success messsages.
-```
+```python3
 import colorformat as cf
 print( cf.setSuccess("Test 1 passed: moving on to next check"))
 print( cf.setWarning("Warning: are you sure you want to continue? Y/N"))
