@@ -55,6 +55,6 @@ At my old work I threw in an easter egg that would make all loading bars rainbow
 ```python3
 message = "Happy Easter!"
 for i, letter in enumerate(message):
-  text += cf.setText(letter, col=RAINBOW[i%len(cf.RAINBOW)], attr=[cf.BOLD])
+  text += cf.setText(letter, col=cf.RAINBOW[i%len(cf.RAINBOW)], attr=[cf.BOLD])
 print(text)
 ```
