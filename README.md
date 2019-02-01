@@ -10,7 +10,8 @@ The max_total_width flag is the size of your terminal window in characters. Typi
 
 ## Example
 ```python3
-from asciiTable import Table
+from table import Table
+from collections import OrderedDict
 
 data = OrderedDict([('apple', [40,50,60,70]), ('banana', [3,1,2]), ('orange', [200]), ('pear', [8,8,90,7])])
 t = Table(data, max_total_width=90, fast_mode=False)
