@@ -19,6 +19,32 @@ t.show()
 t.show_csv()
 t.show_json()
 ```
+#### Example Output
+```python3
+>>> t.show()
+┌─────┬───┬───┬────┐
+│apple│ban│ora│pear│
+│     │ana│nge│    │
+├─────┼───┼───┼────┤
+│ 40  │ 3 │200│ 8  │
+├─────┼───┼───┼────┤
+│ 50  │ 1 │   │ 8  │
+├─────┼───┼───┼────┤
+│ 60  │ 2 │   │ 90 │
+├─────┼───┼───┼────┤
+│ 70  │   │   │ 7  │
+└─────┴───┴───┴────┘
+
+>>> t.show_csv()
+apple,banana,orange,pear
+40,3,200,8
+50,1,,8
+60,2,,90
+70,,,7
+
+>>> t.show_json()
+{'items': [{'apple': '40', 'pear': '8', 'banana': '3', 'orange': '200'}, {'apple': '50', 'pear': '8', 'banana': '1', 'orange': ''}, {'apple': '60', 'pear': '90', 'banana': '2', 'orange': ''}, {'apple': '70', 'pear': '7', 'banana': '', 'orange': ''}]}
+```
 # colorformat
 A stdout wrapper in python for displaying colored text into supported linux terminals. Any terminal running bash should respond to the colors. The colors passed in are defined as constants at the top of the file, along with the attributes and background. The reset flag just sets the stdout back to standard text after the line is flushed onto the terminal, so setting this flag to false would just make future print statements follow with the same formatting. Of course, you can just call `resetText()` to end the formatting.
 
